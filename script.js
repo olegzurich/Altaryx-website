@@ -1,1 +1,0 @@
-document.getElementById('language-select').addEventListener('change', function() { alert('Language changed to ' + this.value); });
