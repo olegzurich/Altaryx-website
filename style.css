@@ -1,0 +1,39 @@
+
+body {
+    font-family: sans-serif;
+    background: #0a0a0a;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #111;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 50px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.buy-btn {
+    background: #00ffcc;
+    color: #000;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 8px;
+}
+main {
+    padding: 2em;
+}
+footer {
+    background: #111;
+    padding: 1em;
+    font-size: 0.8em;
+}
