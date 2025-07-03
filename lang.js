@@ -1,1 +1,0 @@
-// Same translation logic as before - placeholder
