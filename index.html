@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Altaryx | Power and Abundance</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Altaryx Logo" class="logo" />
+    <nav>
+      <select id="language-selector">
+        <option value="en">EN</option>
+        <option value="fr">FR</option>
+        <option value="de">DE</option>
+        <option value="es">ES</option>
+        <option value="ja">JA</option>
+        <option value="zh">ZH</option>
+        <option value="ru">RU</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1 data-translate="hero_title">Altaryx</h1>
+      <p data-translate="hero_subtitle">The Future of Strength and Abundance</p>
+      <a href="https://www.sushi.com/swap?chainId=42161&fromCurrency=ETH&toCurrency=0x248E5dc032867EEaeaACaCe284Ce988c144F3c5A" target="_blank" class="buy-btn" data-translate="buy_button">Buy ALTX</a>
+    </section>
+
+    <section id="about">
+      <h2 data-translate="about_title">About Altaryx</h2>
+      <p data-translate="about_text">Altaryx is a next-generation token built on Arbitrum, combining blazing speed, low fees, and true decentralization with deflationary mechanics.</p>
+    </section>
+
+    <section id="advantages">
+      <h2 data-translate="advantages_title">Advantages</h2>
+      <ul>
+        <li data-translate="advantage1">Ultra-fast transactions</li>
+        <li data-translate="advantage2">Low gas fees</li>
+        <li data-translate="advantage3">Deflationary model with burns</li>
+        <li data-translate="advantage4">Secure and decentralized</li>
+      </ul>
+    </section>
+
+    <section id="how-to-buy">
+      <h2 data-translate="how_to_buy_title">How to Buy</h2>
+      <p data-translate="how_to_buy_text">Connect your wallet (e.g., MetaMask), go to SushiSwap, and swap ETH for ALTX on Arbitrum network.</p>
+    </section>
+
+    <section id="tokenomics">
+      <h2 data-translate="tokenomics_title">Tokenomics</h2>
+      <p><strong>Token Name:</strong> Altaryx (ALTX)</p>
+      <p><strong>Network:</strong> Arbitrum</p>
+      <p><strong>Contract Address:</strong> 0x248E5dc032867EEaeaACaCe284Ce988c144F3c5A</p>
+      <p><strong>Total Supply:</strong> 1,000,000,000 ALTX</p>
+      <p><strong>Decimals:</strong> 16</p>
+    </section>
+
+    <section id="roadmap">
+      <h2 data-translate="roadmap_title">Roadmap</h2>
+      <ul>
+        <li>Q2 2025: Token launch on Arbitrum</li>
+        <li>Q3 2025: Listings & Partnerships</li>
+        <li>Q4 2025: Community growth & Staking</li>
+        <li>Q1 2026: Cross-chain expansion</li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2 data-translate="faq_title">FAQ</h2>
+      <p data-translate="faq1">How do I buy ALTX?</p>
+      <p data-translate="faq1_answer">Connect wallet, go to SushiSwap, and swap ETH for ALTX.</p>
+    </section>
+
+    <section id="community">
+      <h2 data-translate="community_title">Join the Community</h2>
+      <p data-translate="community_text">Follow us on X, Telegram, and Discord to stay updated.</p>
+    </section>
+
+    <section id="partners">
+      <h2 data-translate="partners_title">Our Partners</h2>
+      <p data-translate="partners_text">Coming soon.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Altaryx. All rights reserved.</p>
+  </footer>
+
+  <script src="lang.js"></script>
+  <script>
+    const langSelector = document.getElementById('language-selector');
+    langSelector.addEventListener('change', function () {
+      const selectedLang = this.value;
+      const translations = window.translations[selectedLang];
+      document.querySelectorAll('[data-translate]').forEach(el => {
+        const key = el.getAttribute('data-translate');
+        if (translations[key]) el.textContent = translations[key];
+      });
+    });
+  </script>
+</body>
+</html>
