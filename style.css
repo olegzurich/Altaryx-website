@@ -1,0 +1,30 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  line-height: 1.6;
+  padding: 20px;
+  margin: 0;
+}
+img.logo {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 30px auto;
+}
+header nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#hero, #about, #advantages {
+  text-align: center;
+  margin-bottom: 40px;
+}
+a {
+  color: #a64ef4;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
