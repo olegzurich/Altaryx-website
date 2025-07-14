@@ -1,0 +1,21 @@
+
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  width: 200px;
+  height: auto;
+}
+a {
+  color: #a56fff;
+  text-decoration: none;
+  font-weight: bold;
+}
