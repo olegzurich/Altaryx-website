@@ -1,21 +1,76 @@
-
 body {
-  background-color: #111;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #f5e6e8;
+    margin: 0;
+    padding: 0;
 }
-.logo-container {
-  display: flex;
-  justify-content: center;
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .logo {
-  width: 200px;
-  height: auto;
+    max-width: 200px;
+    transition: transform 0.3s ease;
 }
-a {
-  color: #a56fff;
-  text-decoration: none;
-  font-weight: bold;
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.buy-btn {
+    background-color: #800080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.buy-btn:hover {
+    background-color: #660066;
+}
+
+#language {
+    padding: 5px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#content {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    margin: 0 10px;
+    color: #800080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        max-width: 150px;
+    }
+    .buy-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
