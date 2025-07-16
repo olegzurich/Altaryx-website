@@ -2,18 +2,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Altaryx</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTARYX</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="logo-container">
-    <img src="logo.png" alt="Altaryx Logo" class="logo"/>
-  </div>
-  <h1 id="hero_title"></h1>
-  <p id="hero_subtitle"></p>
-  <a id="buy_altx" href="https://www.sushi.com/swap?chainId=42161&fromCurrency=0xaf88d065e77c8cC2239327C5EDb3A432268e5831&toCurrency=0x248E5dc032867EEaeaACaCe284Ce988c144F3c5A" target="_blank">Buy ALTX on SushiSwap</a>
-  <script src="lang.js"></script>
+    <div class="container">
+        <img src="logo.png" alt="ALTARYX Logo" class="logo">
+        <button class="buy-btn" onclick="window.location.href='https://app.sushi.com/pool/0xe236cA07f4b162b5501adaaac4492eA5B38860C9'">Buy ALTARYX</button>
+        <select id="language" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="ja">日本語</option>
+            <option value="zh">中文</option>
+            <option value="ru">Русский</option>
+        </select>
+        <div id="content"></div>
+        <div class="socials">
+            <a href="https://x.com/OlegZurich" target="_blank">X</a>
+            <a href="https://t.me/OlegZurich" target="_blank">Telegram</a>
+        </div>
+    </div>
+    <script src="js/translations.js"></script>
 </body>
 </html>
