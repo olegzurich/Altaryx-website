@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ALTARYX</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="ALTARYX Logo" class="logo" />
+        <button class="buy-btn" onclick="window.location.href='https://app.sushi.com/pool/0xe236cA07f4b162b5501adaaac4492eA5B38860C9'">Buy ALTARYX</button>
+        <select id="language" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="ja">日本語</option>
+            <option value="zh">中文</option>
+            <option value="ru">Русский</option>
+        </select>
+        <div id="content"></div>
+        <div class="socials">
+            <a href="https://x.com/OlegZurich" target="_blank" title="Follow on X">X</a>
+            <a href="https://t.me/OlegZurich" target="_blank" title="Join Telegram">Telegram</a>
+        </div>
+    </div>
+    <script src="js/translations.js"></script>
+    <script>
+        function changeLanguage() {
+            const lang = document.getElementById("language").value;
+            const contentDiv = document.getElementById("content");
+            contentDiv.innerHTML = `<h2>${translations[lang].title}</h2><p>${translations[lang].content}</p>`;
+            localStorage.setItem("selectedLanguage", lang);
+        }
+        window.addEventListener("load", () => {
+            const savedLang = localStorage.getItem("selectedLanguage") || "en";
+            document.getElementById("language").value = savedLang;
+            changeLanguage();
+        });
+    </script>
+</body>
+</html>
