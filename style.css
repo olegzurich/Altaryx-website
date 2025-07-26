@@ -1,0 +1,55 @@
+body.dark-theme {
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: block;
+  margin: 20px auto 10px;
+  max-width: 160px;
+}
+
+.buy-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #7f00ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.language-selector {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.about {
+  padding: 10px 20px;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.contract {
+  color: #7f00ff;
+  word-break: break-word;
+  font-size: 12px;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.social-links a {
+  color: #7f00ff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
