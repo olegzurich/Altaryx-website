@@ -1,0 +1,79 @@
+body.dark-theme {
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: block;
+  margin: 16px auto 8px; /* компактнее */
+  max-width: 160px;
+}
+.buy-button {
+  display: block;
+  margin: 6px auto;       /* компактнее */
+  padding: 9px 18px;      /* компактнее */
+  background-color: #7f00ff;
+  color: #cccccc;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+.language-selector {
+  text-align: center;
+  margin: 6px 0;          /* компактнее */
+}
+.language-selector select {
+  background-color: #001833;
+  color: #00ccff;
+  padding: 8px 12px;
+  border: 1px solid #00ccff;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.about {
+  padding: 10px 20px;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+  color: #00ff99;
+}
+.contract {
+  color: #7f00ff;
+  font-size: 11px;        /* компактнее */
+  white-space: nowrap;    /* в одну строку */
+  overflow-x: auto;       /* можно проскроллить */
+  display: inline-block;
+}
+.social-links {
+  text-align: center;
+  margin-top: 4px;        /* компактнее */
+}
+.social-links a {
+  color: #7f00ff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Контейнер двух кнопок */
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;               /* компактнее */
+  flex-wrap: wrap;
+  margin: 8px auto 6px;   /* компактнее */
+}
+
+/* Мобильная версия */
+@media (max-width: 520px) {
+  .cta-actions .buy-button {
+    width: 100%;
+    text-align: center;
+  }
+}
