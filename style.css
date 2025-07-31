@@ -1,0 +1,80 @@
+
+body.dark-theme {
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.logo {
+  display: block;
+  margin: 20px auto 10px;
+  max-width: 220px;
+  width: 70%;
+  height: auto;
+}
+
+.btn {
+  display: block;
+  width: 92%;
+  max-width: 520px;
+  margin: 10px auto;
+  padding: 12px 16px;
+  background-color: #7f00ff;
+  color: #cccccc;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.language-selector {
+  text-align: center;
+  margin: 12px 0 4px;
+}
+.language-selector select {
+  background-color: #001833;
+  color: #00ccff;
+  padding: 8px 12px;
+  border: 1px solid #00ccff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  outline: none;
+}
+
+.about {
+  padding: 10px 20px 44px;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+  color: #00ff99;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.about h1 {
+  margin: 10px 0 12px;
+}
+
+.contract {
+  color: #7f00ff;
+  font-size: 12px;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 6px;
+}
+.social-links a {
+  color: #7f00ff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
