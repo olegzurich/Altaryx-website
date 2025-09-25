@@ -1,23 +1,30 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>ALTARYX</title>
-  <link rel="stylesheet" href="style.css?v=6" />
-  <script defer src="lang.js?v=6"></script>
+
+  <!-- оставляем твои файлы стилей и переводов -->
+  <link rel="stylesheet" href="style.css?v=8" />
+  <script defer src="lang.js?v=8"></script>
 </head>
 <body>
   <main class="wrap">
     <img class="logo" src="logo.png" alt="ALTARYX" />
+
+    <!-- ПРЯМАЯ ССЫЛКА НА СВОП ALTX/USDC (Arbitrum, стабильный legacy UI) -->
     <a class="btn buy" target="_blank" rel="noopener noreferrer"
-       href="https://www.sushi.com/swap?chainId=42161&fromCurrency=0xaf88d065e77c8cC2239327C5EDb3A432268e5831&toCurrency=0x248E5dc032867EEaeaACaCe284Ce988c144F3c5A&swapMode=EXACT_INPUT">
+       href="https://app.sushi.com/swap?chainId=42161&inputCurrency=0xaf88d065e77c8cC2239327C5EDb3A432268e5831&outputCurrency=0x248E5dc032867EEaeaACaCe284Ce988c144F3c5A">
       Buy ALTX on SushiSwap
     </a>
+
     <div class="nav">
       <a href="https://x.com/OlegZurich" target="_blank" rel="noopener">X</a>
       <a href="https://t.me/OlegZurich" target="_blank" rel="noopener">Telegram</a>
     </div>
+
     <div class="lang">
       <select id="languageSelect" aria-label="Language">
         <option value="en">English</option>
@@ -29,6 +36,7 @@
         <option value="zh">中文</option>
       </select>
     </div>
+
     <section class="about">
       <h1 data-lang="about-title"></h1>
       <p data-lang="about-text"></p>
