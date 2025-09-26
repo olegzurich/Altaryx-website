@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>ALTARYX</title>
+  <link rel="stylesheet" href="style.css?v=10" />
+  <script defer src="lang.js?v=10"></script>
+</head>
+<body>
+  <main class="wrap">
+    <img class="logo" src="logo.png" alt="ALTARYX" />
+
+    <!-- Универсальная кнопка -->
+    <a class="btn buy" id="buyBtn" href="#" rel="noopener">Buy ALTX</a>
+
+    <div class="nav">
+      <a href="https://x.com/OlegZurich" target="_blank" rel="noopener">X</a>
+      <a href="https://t.me/OlegZurich" target="_blank" rel="noopener">Telegram</a>
+    </div>
+
+    <div class="lang">
+      <select id="languageSelect" aria-label="Language">
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="ja">日本語</option>
+        <option value="zh">中文</option>
+      </select>
+    </div>
+
+    <section class="about">
+      <h1 data-lang="about-title"></h1>
+      <p data-lang="about-text"></p>
+    </section>
+  </main>
+
+  <!-- Modal инструкция -->
+  <div id="buyModal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop" id="buyBackdrop"></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="buyTitle">
+      <button class="modal__close" id="buyClose" aria-label="Close">×</button>
+      <h3 id="buyTitle">How to Buy ALTX</h3>
+      <ol class="modal__steps">
+        <li>Connect your wallet (MetaMask, Rabby, etc.).</li>
+        <li>Switch network to <strong>Arbitrum One</strong>.</li>
+        <li>Choose <strong>V2</strong> (legacy swap).</li>
+        <li>Select <strong>USDC</strong> as “From”.</li>
+        <li>Paste ALTX contract: <code>0x248E5dc032867EEaeaACaCe284Ce988c144F3c5A</code>.</li>
+        <li>Confirm and swap.</li>
+      </ol>
+
+      <a class="btn modal__cta" target="_blank" rel="noopener noreferrer"
+         href="https://app.sushi.com/swap?chainId=42161&inputCurrency=0xaf88d065e77c8cC2239327C5EDb3A432268e5831&outputCurrency=0x248E5dc032867EEaeaACaCe284Ce988c144F3c5A">
+        Go to SushiSwap
+      </a>
+
+      <p class="modal__note">
+        <em>Currently traded on SushiSwap (Arbitrum V2). In the future we’ll add steps for other exchanges here.</em>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const openBtn = document.getElementById('buyBtn');
+      const modal   = document.getElementById('buyModal');
+      const closeX  = document.getElementById('buyClose');
+      const backdrop= document.getElementById('buyBackdrop');
+
+      function openModal(e){
+        e.preventDefault();
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeModal(){
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      openBtn.addEventListener('click', openModal);
+      closeX.addEventListener('click', closeModal);
+      backdrop.addEventListener('click', closeModal);
+      document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeModal(); });
+    })();
+  </script>
+</body>
+</html>
